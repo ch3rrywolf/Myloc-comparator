@@ -12,6 +12,7 @@ import SearchBar from '../shared/SearchBar';
 import ServiceList from '../services/ServiceList';
 import FeaturedVoitureList from '../components/Featured-voiture/FeaturedVoitureList';
 import experienceImg from "../assets/images/experience.png";
+import MasonryImagesGallery from '../components/Image-gallery/MasonryImagesGallery';
 
 
 const Home = () => {
@@ -110,6 +111,20 @@ const Home = () => {
         <Col lg="6">
         <div className="experience__img">
           <img src={experienceImg} alt="" /></div></Col>
+      </Row>
+    </Container>
+  </section>
+
+  <section>
+    <Container>
+      <Row>
+        <Col lg='12'>
+          <Subtitle subtitle={'Gallery'}/>
+          <h2 className="gallery__title"> our Customers voiture gallery</h2>
+        </Col>
+        <Col lg='12'>
+          <MasonryImagesGallery />
+        </Col>
       </Row>
     </Container>
   </section>
