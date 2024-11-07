@@ -1,4 +1,4 @@
-import React from "react";
+import React, {useRef} from "react";
 import "./search-bar.css";
 import { Col, FormGroup, Form, FromGroup } from "reactstrap";
 
@@ -35,6 +35,9 @@ const SearchBar = () => {
                         <input type="number" placeholder="0"></input>
                     </div>
                 </FormGroup>
+                <span className="search__icon" type="submit">
+                    <i class="ri-search-line"></i>
+                </span>
             </Form>
         </div>
     </Col>
