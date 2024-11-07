@@ -14,6 +14,7 @@ import FeaturedVoitureList from '../components/Featured-voiture/FeaturedVoitureL
 import experienceImg from "../assets/images/experience.png";
 import MasonryImagesGallery from '../components/Image-gallery/MasonryImagesGallery';
 import Testimonials from '../components/Testimonial/Testimonials';
+import Newsletter from '../shared/Newsletter';
 
 const Home = () => {
   return <>
@@ -142,7 +143,7 @@ const Home = () => {
       </Row>
     </Container>
   </section>
-
+  <Newsletter />
   </>
 }
 
