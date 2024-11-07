@@ -10,6 +10,7 @@ import GlobalHomeImg from '../assets/images/HomeGlobal.svg'
 import Subtitle from '../shared/Subtitle';
 import SearchBar from '../shared/SearchBar';
 import ServiceList from '../services/ServiceList';
+import FeaturedVoitureList from '../components/Featured-voiture/FeaturedVoitureList';
 
 const Home = () => {
   return <>
@@ -61,6 +62,18 @@ const Home = () => {
         <h2 className="services_title">We offer our best services</h2>
         </Col>
         <ServiceList />
+      </Row>
+    </Container>
+  </section>
+
+  <section>
+    <Container>
+      <Row>
+        <Col lg="12" className="mb-5">
+          <Subtitle subtitle={"Explore"} />
+          <h2 className="featured__voiture-title">Our featured tours</h2>
+        </Col>
+        <FeaturedVoitureList />
       </Row>
     </Container>
   </section>
