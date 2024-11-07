@@ -2,9 +2,9 @@ import React from 'react'
 import '../styles/home.css'
 
 import { Container, Row, Col } from 'reactstrap';
-import heroImg from '../assets/images/hero-img01.jpg'
-import heroImg02 from '../assets/images/hero-img02.jpg'
-import heroVideo from '../assets/images/hero-video.mp4'
+import heroImg from '../assets/images/cc1.jpg'
+import heroImg02 from '../assets/images/cc2.jpg'
+import heroVideo from '../assets/images/cc3.jpg'
 import worldImg from '../assets/images/world.png'
 import GlobalHomeImg from '../assets/images/HomeGlobal.svg'
 import Subtitle from '../shared/Subtitle';
@@ -15,6 +15,7 @@ const Home = () => {
   <section>
     <Container>
       <Row>
+      <SearchBar />
         <Col lg='6'>
         <div className="hero__content">
           <div className="hero__subtitle d-flex align-items-center ">
@@ -38,7 +39,7 @@ const Home = () => {
         </Col>
         <Col lg='2'>
         <div className="hero__img-box mt-4">
-          <video src={heroVideo} alt="" controls />
+          <img src={heroVideo} alt="" controls />
         </div>
         </Col>
         <Col lg='2'>
@@ -46,7 +47,7 @@ const Home = () => {
           <img src={heroImg02} alt="" />
         </div>
         </Col>
-        <SearchBar />
+        
       </Row>
     </Container>
   </section>
