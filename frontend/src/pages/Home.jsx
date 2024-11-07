@@ -50,6 +50,18 @@ const Home = () => {
       </Row>
     </Container>
   </section>
+
+  <section>
+    <Container>
+      <Row>
+        <Col lg="3">
+        <h5 className="services__subtitle">What We serve</h5>
+        <h2 className="services_title">We offer our best services</h2>
+        </Col>
+      </Row>
+    </Container>
+  </section>
+
   </>
 }
 
