@@ -5,10 +5,11 @@ import { Container, Row, Col } from 'reactstrap';
 import heroImg from '../assets/images/cc1.jpg'
 import heroImg02 from '../assets/images/cc2.jpg'
 import heroVideo from '../assets/images/cc3.jpg'
-import worldImg from '../assets/images/world.png'
+// import worldImg from '../assets/images/world.png'
 import GlobalHomeImg from '../assets/images/HomeGlobal.svg'
 import Subtitle from '../shared/Subtitle';
 import SearchBar from '../shared/SearchBar';
+import ServiceList from '../services/ServiceList';
 
 const Home = () => {
   return <>
@@ -59,6 +60,7 @@ const Home = () => {
         <h5 className="services__subtitle">What We serve</h5>
         <h2 className="services_title">We offer our best services</h2>
         </Col>
+        <ServiceList />
       </Row>
     </Container>
   </section>
