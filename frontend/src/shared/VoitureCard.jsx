@@ -5,7 +5,7 @@ import './voiture-card.css';
 import calculateAvgRating from "../utils/avgRating";
 
 const VoitureCard = ({ voiture }) => {
-    const { id, title, photo, city, price, featured, reviews } = voiture;
+    const { id,title, photo, city, price, featured, reviews } = voiture;
 
     const { totalRating, avgRating } = calculateAvgRating(reviews);
     

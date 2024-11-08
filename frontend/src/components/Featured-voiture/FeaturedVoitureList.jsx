@@ -1,6 +1,6 @@
 import React from 'react';
 import VoitureCard from '../../shared/VoitureCard';
-import voitureData from '../../assets/data/tours';
+import voitureData from '../../assets/data/voitures';
 import { Col } from "reactstrap";
 const FeaturedVoitureList = () => {
   return (
