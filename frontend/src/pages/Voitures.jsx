@@ -48,6 +48,7 @@ const Voitures = () => {
               ))}
             </div>
           </Col>
+          <Newsletter />
         </Row>
       </Container>
     </section>
