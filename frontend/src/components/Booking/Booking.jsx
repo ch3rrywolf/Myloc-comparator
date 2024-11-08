@@ -1,9 +1,11 @@
 import React, {useState} from 'react';
 import './booking.css';
 import { Form, FormGroup, ListGroup, ListGroupItem, Button } from "reactstrap";
+import { useNavigate } from 'react-router-dom';
 
 const Booking = ({voiture, avgRating}) => {
     const {price, reviews} = voiture;
+    const navigate = useNavigate()
 
     const [credentials, setCredentials] = useState({
         userId: '01',
@@ -18,10 +20,13 @@ const Booking = ({voiture, avgRating}) => {
         setCredentials(prev => ({ ...prev, [e.target.id]: e.target.value }));
     };
 
+    const serviceFee = 10
+    const totalAmount = Number(price) * Number(credentials.guestSize) + Number(serviceFee)
+
     const handleClick = e => {
         e.preventDefault();
 
-        console.log(credentials);
+        navigate("/thank-you");
     }
 
   return <div>
@@ -58,11 +63,11 @@ const Booking = ({voiture, avgRating}) => {
             </ListGroupItem>
             <ListGroupItem className="border-0 px-0">
                 <h5>Service charge</h5>
-                <span> $10</span>
+                <span> ${serviceFee}</span>
             </ListGroupItem>
             <ListGroupItem className="border-0 px-0">
                 <h5>Total</h5>
-                <span> $109</span>
+                <span> ${totalAmount}</span>
             </ListGroupItem>
         </ListGroup>
         <Button className="btn primary__btn w-100 mt-4" onClick={handleClick}>Book Now</Button>

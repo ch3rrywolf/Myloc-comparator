@@ -7,17 +7,19 @@ import VoitureDetails from '../pages/VoitureDetails';
 import Login from '../pages/Login';
 import Register from '../pages/Register';
 import SearchResultList from '../pages/SearchResultList';
+import ThankYou from '../pages/ThankYou';
 
 const Routers = () => {
   return (
     <Routes>
         <Route path='/' element={<Navigate to='/home' />} />
-        <Route path='/Home' element={<Home to='/home' />} />
-        <Route path='/voitures' element={<Voitures to='/home' />} />
-        <Route path='/voitures/:id' element={<VoitureDetails to='/home' />} />
-        <Route path='/login' element={<Login to='/home' />} />
-        <Route path='/register' element={<Register to='/home' />} />
-        <Route path='/voitures/search' element={<SearchResultList to='/home' />} />
+        <Route path='/Home' element={<Home />} />
+        <Route path='/voitures' element={<Voitures />} />
+        <Route path='/voitures/:id' element={<VoitureDetails />} />
+        <Route path='/login' element={<Login />} />
+        <Route path='/register' element={<Register />} />
+        <Route path='/thank-you' element={<ThankYou />} />
+        <Route path='/voitures/search' element={<SearchResultList />} />
         <Route />
     </Routes>
   )

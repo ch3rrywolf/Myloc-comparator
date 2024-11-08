@@ -6,6 +6,7 @@ import voitureData from "../assets/data/voitures"
 import calculateAvgRating from '../utils/avgRating';
 import avatar from "../assets/images/avatar.jpg";
 import Booking from "../components/Booking/Booking";
+import Newsletter from '../shared/Newsletter';
 
 const VoitureDetails = () => {
   const {id} = useParams()
@@ -119,6 +120,7 @@ const VoitureDetails = () => {
           </Row>
         </Container>
       </section>
+      <Newsletter />
     </>
   )
 };
