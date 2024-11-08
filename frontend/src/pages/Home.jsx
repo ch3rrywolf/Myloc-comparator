@@ -61,11 +61,25 @@ const Home = () => {
   <section>
     <Container>
       <Row>
-        <Col lg="3">
+        <div className="text-center">
         <h5 className="services__subtitle">What We serve</h5>
-        <h2 className="services_title">We offer our best services</h2>
-        </Col>
+        <h3 className="services_title">Les prix les plus bas de l'univers... entrez et vérifiez !</h3>
+        </div>
         <ServiceList />
+      </Row>
+    </Container>
+  </section>
+
+  <section>
+    <Container>
+      <Row>
+        <Col lg='12'>
+          <Subtitle subtitle={'Fans love'} />
+          <h2 className="testimonial__title">What our fans say about us</h2>
+        </Col>
+        <Col lg="12">
+        <Testimonials />
+        </Col>
       </Row>
     </Container>
   </section>
@@ -78,6 +92,7 @@ const Home = () => {
           <h2 className="featured__voiture-title">Our featured voitures</h2>
         </Col>
         <FeaturedVoitureList />
+        <p className="text-center">Une note de <b>4.0</b> sur 5 sur la base de <u>82 211 avis.</u>Nos avis préférés.</p>
       </Row>
     </Container>
   </section>
@@ -130,19 +145,7 @@ const Home = () => {
     </Container>
   </section>
 
-  <section>
-    <Container>
-      <Row>
-        <Col lg='12'>
-          <Subtitle subtitle={'Fans love'} />
-          <h2 className="testimonial__title">What our fans say about us</h2>
-        </Col>
-        <Col lg="12">
-        <Testimonials />
-        </Col>
-      </Row>
-    </Container>
-  </section>
+  
   <Newsletter />
   </>
 }

@@ -9,18 +9,18 @@ import customizationImg from '../assets/images/customization.png'
 const servicesData =[
     {
         imgUrl: weatherImg,
-        title: "Calculate Weather",
-        desc: "calc weather",
+        title: "Location Voiture",
+        desc: "Plus de 14.7 millions de clients satisfaits.",
     },
     {
         imgUrl: guideImg,
-        title: "Best Voiture",
-        desc: "best voiture",
+        title: "Pas de Frais de Modification",
+        desc: "Modifications et annulations gratuites",
     },
     {
         imgUrl: customizationImg,
-        title: "custom your voiture",
-        desc: "custom",
+        title: "Évaluation 4.1 de 5",
+        desc: "Basé sur +46000 avis indépendants",
     },
 ]
 
@@ -28,7 +28,7 @@ const ServiceList = () => {
   return (
    <>
    {servicesData.map((item, index) => (
-    <Col lg="3" key={index}>
+    <Col lg="4" key={index}>
         <ServiceCard item={item} />
     </Col>
    ))}
