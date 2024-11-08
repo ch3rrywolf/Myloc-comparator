@@ -66,6 +66,8 @@ const Header = () => {
                 </div>
 
                 <div className="nav__right d-flex align-items-center gap-4">
+                      <i class="ri-whatsapp-line"></i>
+                   <p className="mb-0">+216 29 744 655</p>
                     <div className="nav__btns d-flex align-items-center gap-4">
                         <Button className="btn secondary__btn">
                             <Link to='/login'>Login</Link>

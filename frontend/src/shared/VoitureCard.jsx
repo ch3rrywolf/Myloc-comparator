@@ -33,9 +33,9 @@ const VoitureCard = ({ voiture }) => {
             </div>
             <h5 className="voiture__title"><Link to={`/voitures/${id}`}>{title}</Link></h5>
             <div className="card__bootom d-flex align-items-center justify-content-between mt-3">
-                <h5>${price}<span> /per person</span></h5>
+                <h5>{price}dt<span> Prix pour 1 jour</span></h5>
                 <button className="btn booking__btn">
-                    <Link to={`/voitures/${id}`}>Book Now</Link>
+                    <Link to={`/voitures/${id}`}>Réservez</Link>
                 </button>
             </div>
             </CardBody>

@@ -19,7 +19,7 @@ const Voitures = () => {
 
   return (
     <>
-    <CommonSection title={'All Voitures'} />
+    <CommonSection title={"Les prix les plus bas de l'univers... entrez et vérifiez !"} />
     <section>
       <Container>
         <Row>
